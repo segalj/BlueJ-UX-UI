@@ -1,0 +1,7 @@
+TO-DO:
+10/1/2018
+	ask green x: ranking
+	indigo o: text transformation
+         let us know about key words what inputs (index)
+
+	colloboarate with Blue\n

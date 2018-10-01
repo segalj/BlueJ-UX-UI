@@ -1,0 +1,11 @@
+Target group:
+	class members + professor
+
+Interfaces:
+	1. search page
+	2. wait page?
+	3. result page
+
+Platforms:
+	1. desktop
+	2. mobile

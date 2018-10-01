@@ -5,10 +5,10 @@ UI + Evaluation:
 		Render page of pages with urls
 
 	Interaction?:
-		get info from Document data store?
-		get ranking info from Ranking?
+		get info snippets from?
+		get ranking info from?
 		send user keywords to ranking
-		send user click to Evaluation?
+		send user click evaluation to?
 
 
 UI:
