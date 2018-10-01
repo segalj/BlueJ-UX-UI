@@ -1,0 +1,28 @@
+UI + Evaluation:
+	Input:
+		User keyword inputs
+	Output:
+		Render page of pages with urls
+
+	Interaction?:
+		get info from Document data store?
+		get ranking info from Ranking?
+		send user keywords to ranking
+		send user click to Evaluation?
+
+
+UI:
+	UI is responsible for taking in user input keywords, then display to user ranked urls. 
+
+	strippind down keywords
+
+	We interact with ranking by passing the keywords, and taking in indexes from ranking. UI is also responsible to inform ranking how well the ranking did.
+
+	We indirectly interact with Text Acquisition to receive document data information
+
+	Persistent data: 
+	(Internal) log data: 
+		keywords, url selected, the rank of url
+
+	(External) Document data store:
+		url, snippet
