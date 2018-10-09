@@ -5,3 +5,11 @@ TO-DO:
          let us know about key words what inputs (index)
 
 	colloboarate with Blue\n
+
+10/09/2018
+from user query
+to ranking: query
+from ranking: unique id + rank
+to index: id (details of database)
+from index: title + snippet
+to ranking: (feedback): query + id 
