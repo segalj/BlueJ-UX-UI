@@ -1,0 +1,12 @@
+From interviewing a few RPI students:
+UI requirement
+1. search bar needs to be on the top of the page
+    - resize based on page size (for splitting screen/multi-tasking)
+2. magnifying glass or some way of indicating "search"
+3. want to be able to see more of the snippet (expand)
+    - peek more
+4. readable search results
+    - font, color (not purple), space in between
+5. Make it simple
+    - not too many ads
+
