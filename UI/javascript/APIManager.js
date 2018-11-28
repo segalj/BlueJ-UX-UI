@@ -1,33 +1,44 @@
-let APIManager = function(rankingAddress = '', indexingAddress = '') {
-    this.rankingAddress = rankingAddress;
-    this.indexingAddress = indexingAddress;
-};
+class APIManager{
+ 	constructor(rankingAddress = '', indexingAddress = '') {
+    	this.rankingAddress = rankingAddress;
+    	this.indexingAddress = indexingAddress;
+	}
 
-APIManager.prototype.setRankingAddress = function(address) {
-    this.rankingAddress = address;
-};
+	setRankingAddress(address) {
+    	this.rankingAddress = address;
+	};
 
-APIManager.prototype.setIndexingAddress = function(address) {
-    this.indexingAddress = address;
-};
+	setIndexingAddress(address) {
+    	this.indexingAddress = address;
+	};
 
-APIManager.prototype.getDocument = function(docID) {
-    let headerInit = {
-        Content-Type : 'application/json',
-        Accept-Charset : 'utf-8'
-    };
-    let header = new Headers(headerInit);
-    let requestInit = {
-        method : 'GET',
-        headers : header
-    };
-    let request = new Request(this.rankingAddress, requestInit);
-    // Not sure if this is correct. Working on this
-    // fetch(request).then(function(response) {return respons.json()})
-};
+	getDocument(docID) {
+    	<?php
+    	$servername = this.indexingAddress;
+		$username = "querying";
+		$password = "querying";
+		$dbname = "index";
+    	
+    	$conn = new mysqli($servername, $username, $password, $dbname);
+		// Check connection
+		if ($conn->connect_error) {
+    		die("Connection failed: " . $conn->connect_error);
+		} 
 
-APIManager.prototype.searchRequest = function(queryInfo) {
-};
+		$sql="Select * FROM "
+    	?>;
+	};
 
-APIManager.prototype.sendQueryFeedback = function(docID) {
-};
+	searchRequest(queryInfo) {
+		const Http = new XMLHttpRequest();
+		const url=this.rankingAddress + queryInfo;
+		Http.open("GET", url);
+		Http.send();
+		Http.onreadystatechange=(e)=>{
+			console.log(Http.responseText)
+		}
+	};
+
+	sendQueryFeedback(docID) {
+	};
+}
