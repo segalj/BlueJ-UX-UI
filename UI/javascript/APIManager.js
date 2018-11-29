@@ -13,7 +13,20 @@ class APIManager{
 	};
 
 	getDocument(docID) {
-		
+		/*<?php
+    	$servername = this.indexingAddress;
+		$username = "querying";
+		$password = "querying";
+		$dbname = "index";
+    	
+    	$conn = new mysqli($servername, $username, $password, $dbname);
+		// Check connection
+		if ($conn->connect_error) {
+    		die("Connection failed: " . $conn->connect_error);
+		} 
+
+		$sql="Select * FROM "
+    	?>;*/
 	};
 
 	searchRequest(queryInfo) {
