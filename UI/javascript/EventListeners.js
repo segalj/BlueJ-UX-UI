@@ -9,13 +9,18 @@ window.onload=function(){
 			}
 		});
 	}
-
-
+	function runQuery(){
+		var api = new APIManager("http://green-x.cs.rpi.edu:5000/search?query=", "http://green-z.cs.rpi.edu/");
+		//console.log(api);
+		if(inputElem.value){
+			api.searchRequest(inputElem.value);
+		}
+	}
 }
 
-function runQuery(){
-	var api = APIManager("http://blender01.cs.rpi.edu:8080/ranking?query=rpi", "TEST");
-	if(inputElem.value){
-		api.searchRequest(inputElem.value);
+let updateResults=function(pages, start, end){
+	var i;
+	for(i=start; i<end; i++){
+		//put in code to get snippets here
 	}
 }
